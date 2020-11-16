@@ -17,7 +17,7 @@ export const saveProduct = (id, name, description, category, gender, price, imag
 			updated_at: timestamp
 		}
 
-		if ( id == "" ) {
+		if ( id === "" ) {
 			// 新しくデータを作る
 			const ref = productsRef.doc()
 			const id = ref.id
